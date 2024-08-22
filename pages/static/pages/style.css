@@ -1,0 +1,87 @@
+/* Общие стили */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Верхняя зелёная полоса */
+.top-bar, .bottom-bar {
+    background-color: #006400; /* тёмно-зелёный цвет */
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-name {
+    font-weight: bold;
+}
+
+.page-title {
+    text-align: center;
+    flex-grow: 1;
+    font-size: 1.5em;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* Нижняя зелёная полоса */
+.bottom-bar {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Центральная белая полоса */
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.content-block {
+    background-color: white;
+    width: 60%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* тени */
+    border-radius: 5px;
+}
+
+/* Центрирование и стилизация заголовков на главной странице */
+.centered-title {
+    font-size: 2em; /* Увеличение размера шрифта в 2 раза */
+    text-align: center; /* Выравнивание текста по центру */
+    margin-top: 20px; /* Отступ сверху */
+}
+
+.centered-subtitle {
+    font-size: 2em; /* Увеличение размера шрифта в 2 раза */
+    text-align: center; /* Выравнивание текста по центру */
+    font-style: italic; /* Курсив */
+    font-weight: bold; /* Жирный шрифт */
+    margin-top: 10px; /* Отступ сверху */
+}
+
+
+/* Сохранение пробелов и переносов строк */
+.preserve-whitespace {
+    white-space: pre-wrap; /* Сохранение пробелов и переносов строк */
+}
+
+/* Увеличение размера шрифта для второй строки */
+.large-text {
+    font-size: 2em; /* В 2 раза больше обычного размера */
+}
+
+/* Увеличение размера шрифта, жирный и курсив для третьей строки */
+.large-bold-italic-text {
+    font-size: 2em; /* В 2 раза больше обычного размера */
+    font-weight: bold; /* Жирный шрифт */
+    font-style: italic; /* Курсив */
+}
+
