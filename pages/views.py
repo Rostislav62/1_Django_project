@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from pages.contact_info import CONTACT_INFO
+from django.contrib.auth.decorators import login_required
+
 
 def home(request):
     return render(request, 'flatpages/home.html', {
@@ -25,8 +27,13 @@ def page2(request):
         'contact_info': CONTACT_INFO
     })
 
+@login_required
 def admin_only(request):
     return render(request, 'flatpages/admin_only.html', {
         'title': 'Только для Админа',
         'contact_info': CONTACT_INFO
     })
+
+@login_required
+def admin_only_view(request):
+    return render(request, 'admin_only.html')
