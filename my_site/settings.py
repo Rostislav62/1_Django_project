@@ -97,8 +97,9 @@ USE_TZ = True
 # URL для статических файлов
 STATIC_URL = '/static/'
 
-# Настройки для хранения статических файлов
-# STATICFILES_DIRS = [BASE_DIR / "static"]
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
+# Путь до директории, содержащей ваши статические файлы
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'my_site', 'pages', 'static')]
+
 
 LOGIN_URL = '/admin/login/'  # Ссылка на страницу логина
